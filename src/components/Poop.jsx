@@ -11,6 +11,7 @@ const Poop = props => {
 }
 
 Poop.propTypes ={
+  level: PropTypes.number.isRequired,
   onClean: PropTypes.func.isRequired
 }
 

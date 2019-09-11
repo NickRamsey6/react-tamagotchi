@@ -11,6 +11,7 @@ const Discipline = props => {
 }
 
 Discipline.propTypes ={
+  level: PropTypes.number.isRequired,
   onScold: PropTypes.func.isRequired
 }
 

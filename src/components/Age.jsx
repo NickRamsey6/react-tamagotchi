@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Age = props => {
   return(
@@ -6,6 +7,10 @@ const Age = props => {
       <div>Age: {props.level}</div>
     </div>
   )
+}
+
+Age.propTypes ={
+  level: PropTypes.number.isRequired,
 }
 
 export default Age;

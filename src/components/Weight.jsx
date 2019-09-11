@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Weight = props => {
   return(
@@ -6,6 +7,10 @@ const Weight = props => {
       <div>Weight: {props.level}</div>
     </div>
   )
+}
+
+Weight.propTypes ={
+  level: PropTypes.number.isRequired,
 }
 
 export default Weight;
