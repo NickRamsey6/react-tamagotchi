@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Bar from './Bar'
 
 const Poop = props => {
   return(
     <div className='Poop stateDisplay'>
-      <div>Poop: {props.level}</div>
+      <div className='stateLevel'>
+        <div>Poop: {props.level}</div>
+        <Bar level={props.level} />
+      </div>
       <button onClick={props.onClean}>Clean</button>
     </div>
   )
