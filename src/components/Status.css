@@ -1,0 +1,51 @@
+.happy {
+  /* animation-name: happyanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; */
+  animation: happyanimation infinite 4s linear;
+
+}
+
+@keyframes happyanimation {
+  0%,100% {transform: translate(-155px, 380px);}
+  25% {transform: translate(-155px, 580px);}
+  50% {transform: translate(60px, 580px);}
+  75% {transform: translate(60px, 380px);}
+}
+
+.sad {
+  animation: sad-animation infinite 8s linear;
+}
+
+@keyframes sad-animation {
+  0%,100% {transform: translate(-155px, 450px);}
+  50% {transform: translate(60px, 450px);}
+}
+
+.Status {
+  /* text-align: center; */
+  width: 1095px;
+  height: 1200px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../assets/images/tamagotchi-player.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: white;
+}
+
+.dead {
+  position: relative;
+  left: -47.5px;
+  top: 450px;
+}
+
+.text {
+  position: relative;
+  left: -47.5px;
+  top: 450px;
+}

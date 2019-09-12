@@ -9,14 +9,14 @@ const Health = props => {
         <div>Health: {props.level}</div>
         <Bar level={props.level} />
       </div>
-      <button onClick={props.onMedication}>Give Medication</button>
+      <button onClick={props.onMedicine}>Give Medicine</button>
     </div>
   )
 }
 
 Health.propTypes = {
   level: PropTypes.number.isRequired,
-  onMedication: PropTypes.func.isRequired
+  onMedicine: PropTypes.func.isRequired
 }
 
 export default Health;
